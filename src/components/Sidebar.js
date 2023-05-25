@@ -30,15 +30,25 @@ export default function Sidebar() {
                   draggableId={`${x}-sideArea`}
                   index={i}
                 >
-                  {(provided) => (
-                    <li
-                      ref={provided.innerRef}
-                      {...provided.draggableProps}
-                      {...provided.dragHandleProps}
-                      className="my-2"
-                    >
-                      {getComponent(x)}
-                    </li>
+                  {(provided, snapshot) => (
+                    <>
+                      <li
+                        ref={provided.innerRef}
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                        className="my-2"
+                      >
+                        {getComponent(x)}
+                      </li>
+                      {snapshot.isDragging ?
+                      <li
+                        className="dnd-copy transform-none"
+                      >
+                        {getComponent(x)}
+                      </li>
+                    : null
+                    }
+                    </>
                   )}
                 </Draggable>
               );
@@ -64,15 +74,25 @@ export default function Sidebar() {
                   draggableId={`${x}-sideArea`}
                   index={i}
                 >
-                  {(provided) => (
-                    <li
-                      ref={provided.innerRef}
-                      {...provided.draggableProps}
-                      {...provided.dragHandleProps}
-                      className="my-2"
-                    >
-                      {getComponent(x)}
-                    </li>
+                  {(provided, snapshot) => (
+                    <>
+                      <li
+                        ref={provided.innerRef}
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                        className="my-2"
+                      >
+                        {getComponent(x)}
+                      </li>
+                      {snapshot.isDragging ?
+                      <li
+                        className="dnd-copy transform-none"
+                      >
+                        {getComponent(x)}
+                      </li>
+                    : null
+                    }
+                    </>
                   )}
                 </Draggable>
               );
@@ -98,15 +118,25 @@ export default function Sidebar() {
                   draggableId={`${x}-sideArea`}
                   index={i}
                 >
-                  {(provided) => (
-                    <li
-                      ref={provided.innerRef}
-                      {...provided.draggableProps}
-                      {...provided.dragHandleProps}
-                      className="my-2"
-                    >
-                      {getComponent(x)}
-                    </li>
+                  {(provided, snapshot) => (
+                    <>
+                      <li
+                        ref={provided.innerRef}
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                        className="my-2"
+                      >
+                        {getComponent(x)}
+                      </li>
+                      {snapshot.isDragging ?
+                      <li
+                        className="dnd-copy transform-none"
+                      >
+                        {getComponent(x)}
+                      </li>
+                    : null
+                    }
+                    </>
                   )}
                 </Draggable>
               );
@@ -132,15 +162,25 @@ export default function Sidebar() {
                   draggableId={`${x}-sideArea`}
                   index={i}
                 >
-                  {(provided) => (
-                    <li
-                      ref={provided.innerRef}
-                      {...provided.draggableProps}
-                      {...provided.dragHandleProps}
-                      className="my-2"
-                    >
-                      {getComponent(x)}
-                    </li>
+                  {(provided, snapshot) => (
+                    <>
+                      <li
+                        ref={provided.innerRef}
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                        className="my-2"
+                      >
+                        {getComponent(x)}
+                      </li>
+                      {snapshot.isDragging ?
+                      <li
+                        className="dnd-copy transform-none"
+                      >
+                        {getComponent(x)}
+                      </li>
+                    : null
+                    }
+                    </>
                   )}
                 </Draggable>
               );
